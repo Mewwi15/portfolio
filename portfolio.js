@@ -1,3 +1,9 @@
+/*
+ - Name : Pongsakorn Srisakat
+ - ID : 6802041510066
+ */
+
+
 function qs(sel, root = document) { return root.querySelector(sel); }
 function qsa(sel, root = document) { return Array.from(root.querySelectorAll(sel)); }
 
