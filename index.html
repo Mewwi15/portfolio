@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="portfolio.css" />
+    <link rel="icon" href="assets/logoxp.ico" sizes="any" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <title>Home | Mewwixp</title>
+  </head>
+
+  <body>
+    <!-- Luxury background (subtle, clean) -->
+    <div class="bg" aria-hidden="true">
+      <div class="bg__gradient"></div>
+      <div class="bg__grid"></div>
+      <div class="bg__noise"></div>
+    </div>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <h2 class="brand">Mewwixp</h2>
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="skill.html">Skills</a></li>
+        <li><a href="activity.html">Activity</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="click-me js-open-quick" type="button">Click Me!!</button>
+    </div>
+
+    <!-- HERO -->
+    <header class="hero section" id="top">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="kicker">
+            <i class="bx bxs-bolt-circle"></i>
+            Computer Education Department. - KMUTNB
+          </p>
+
+          <h1 class="hero__title">
+            Hi, I’m <span class="accent">Pongsakorn</span>.
+          </h1>
+
+          <p class="hero__typed js-typed" data-text="Computer Education Department."></p>
+
+          <p class="hero__sub">
+            I build modern, responsive interfaces with clean spacing, strong typography, and premium UI details.
+          </p>
+
+          <div class="hero__ctas">
+            <a class="pill" href="activity.html"><i class="bx bx-grid-alt"></i> View Works</a>
+            <button class="pill ghost js-open-about" type="button"><i class="bx bx-user"></i> About</button>
+            <a class="pill ghost" href="contact.html"><i class="bx bx-send"></i> Contact</a>
+          </div>
+
+          <div class="hero__badges">
+            <span class="chip"><i class="bx bx-check-shield"></i> Clean Layout</span>
+            <span class="chip"><i class="bx bx-devices"></i> Responsive</span>
+            <span class="chip"><i class="bx bx-layer"></i> Modern UI</span>
+          </div>
+        </div>
+
+        <div class="hero__cardWrap">
+          <div class="heroCard">
+            <div class="heroCard__top">
+              <span class="dot"></span>
+              <span class="heroCard__status">Available</span>
+              <span class="heroCard__sep">•</span>
+              <span class="heroCard__role">Frontend</span>
+            </div>
+
+            <div class="heroCard__body">
+              <img src="assets/logoxp.png" alt="Mewwixp logo" />
+            </div>
+
+            <div class="heroCard__bottom">
+              <div class="miniStat">
+                <div class="num js-count" data-to="12">0</div>
+                <div class="label">Projects</div>
+              </div>
+              <div class="miniStat">
+                <div class="num js-count" data-to="6">0</div>
+                <div class="label">Stacks</div>
+              </div>
+              <div class="miniStat">
+                <div class="num js-count" data-to="100">0</div>
+                <div class="label">Energy</div>
+              </div>
+            </div>
+
+            <div class="heroCard__shine" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Scroll hint removed (as requested) -->
+    </header>
+
+    <!-- EDUCATION (Upgraded: timeline + highlights panel) -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="sectionHead">
+          <h5 class="seprator">Education</h5>
+          <p class="sectionHead__sub">
+            A clean timeline of where I studied — and what I focused on in each step.
+          </p>
+        </div>
+
+        <div class="education">
+          <!-- Left: timeline -->
+          <div class="eduTimeline" role="list">
+            <article class="eduCard" role="listitem">
+              <div class="eduCard__dot" aria-hidden="true"></div>
+
+              <div class="eduCard__top">
+                <div class="eduLogo">
+                  <img src="assets/logoSch_3.jpg" alt="Chainatpittayakom logo" />
+                </div>
+
+                <div class="eduMeta">
+                  <div class="eduMeta__row">
+                    <h3>Chainatpittayakom</h3>
+                    <span class="eduMeta__time">Grade 7–12</span>
+                  </div>
+                  <p class="eduMeta__desc">
+                    Built strong foundations and improved communication through teamwork and class activities.
+                  </p>
+                </div>
+              </div>
+
+              <div class="eduCard__chips">
+                <span class="chip chip--soft"><i class="bx bx-math"></i> Math</span>
+                <span class="chip chip--soft"><i class="bx bx-atom"></i> Science</span>
+                <span class="chip chip--soft"><i class="bx bx-group"></i> Teamwork</span>
+              </div>
+
+              <ul class="eduCard__list">
+                <li><i class="bx bx-check"></i> Consistent learning habits & discipline</li>
+                <li><i class="bx bx-check"></i> Developed presentation confidence</li>
+              </ul>
+            </article>
+
+            <article class="eduCard" role="listitem">
+              <div class="eduCard__dot" aria-hidden="true"></div>
+
+              <div class="eduCard__top">
+                <div class="eduLogo">
+                  <img src="assets/images.jpg" alt="Chainat Technical College logo" />
+                </div>
+
+                <div class="eduMeta">
+                  <div class="eduMeta__row">
+                    <h3>Chainat Technical College</h3>
+                    <span class="eduMeta__time">Vocational Cert. (Y1–Y2)</span>
+                  </div>
+                  <p class="eduMeta__desc">
+                    Hands-on practice with programming, problem-solving, and building real assignments that work.
+                  </p>
+                </div>
+              </div>
+
+              <div class="eduCard__chips">
+                <span class="chip chip--soft"><i class="bx bx-code-alt"></i> Coding</span>
+                <span class="chip chip--soft"><i class="bx bx-wrench"></i> Practical Work</span>
+                <span class="chip chip--soft"><i class="bx bx-bulb"></i> Problem Solving</span>
+              </div>
+
+              <ul class="eduCard__list">
+                <li><i class="bx bx-check"></i> Learned to ship projects with deadlines</li>
+                <li><i class="bx bx-check"></i> Improved logic and debugging skills</li>
+              </ul>
+            </article>
+
+            <article class="eduCard eduCard--active" role="listitem">
+              <div class="eduCard__dot" aria-hidden="true"></div>
+
+              <div class="eduCard__top">
+                <div class="eduLogo">
+                  <img src="assets/kmutnb.png" alt="KMUTNB logo" />
+                </div>
+
+                <div class="eduMeta">
+                  <div class="eduMeta__row">
+                    <h3>KMUTNB</h3>
+                    <span class="eduMeta__time">Currently Studying</span>
+                  </div>
+                  <p class="eduMeta__desc">
+                    Computer Education — combining teaching mindset with modern technology and UI engineering.
+                  </p>
+                </div>
+              </div>
+
+              <div class="eduCard__chips">
+                <span class="chip chip--soft"><i class="bx bx-book-open"></i> Education</span>
+                <span class="chip chip--soft"><i class="bx bx-devices"></i> UI</span>
+                <span class="chip chip--soft"><i class="bx bx-brain"></i> Learning Design</span>
+              </div>
+
+              <ul class="eduCard__list">
+                <li><i class="bx bx-check"></i> Focus on clear explanation & user-first thinking</li>
+                <li><i class="bx bx-check"></i> Build modern interfaces for learning & projects</li>
+              </ul>
+            </article>
+          </div>
+
+          <!-- Right: highlights panel -->
+          <aside class="eduPanel" aria-label="Education highlights">
+            <div class="eduPanel__head">
+              <h3>Highlights</h3>
+              <p>
+                My education path shaped how I think: structured logic, clean design, and teaching-friendly communication.
+              </p>
+            </div>
+
+            <div class="eduPanel__grid">
+              <div class="eduStat">
+                <div class="eduStat__icon"><i class="bx bx-calendar"></i></div>
+                <div class="eduStat__meta">
+                  <div class="eduStat__num">3</div>
+                  <div class="eduStat__label">Schools</div>
+                </div>
+              </div>
+
+              <div class="eduStat">
+                <div class="eduStat__icon"><i class="bx bx-code-curly"></i></div>
+                <div class="eduStat__meta">
+                  <div class="eduStat__num">UI</div>
+                  <div class="eduStat__label">Focus Area</div>
+                </div>
+              </div>
+
+              <div class="eduStat">
+                <div class="eduStat__icon"><i class="bx bx-shield-quarter"></i></div>
+                <div class="eduStat__meta">
+                  <div class="eduStat__num">Clean</div>
+                  <div class="eduStat__label">Work Style</div>
+                </div>
+              </div>
+
+              <div class="eduStat">
+                <div class="eduStat__icon"><i class="bx bx-message-square-dots"></i></div>
+                <div class="eduStat__meta">
+                  <div class="eduStat__num">Teach</div>
+                  <div class="eduStat__label">Mindset</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="eduPanel__cta">
+              <button class="pill ghost js-open-about" type="button">
+                <i class="bx bx-user"></i> Read My Bio
+              </button>
+              <a class="pill" href="activity.html"><i class="bx bx-grid-alt"></i> See Works</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT (Warm teacher + mentor tone) -->
+    <section class="section" id="about">
+      <div class="container">
+        <h5 class="seprator">Who I Am</h5>
+
+        <div class="about">
+          <div class="about__img">
+            <img src="assets/person.png" alt="Profile photo" />
+            <div class="about__glow" aria-hidden="true"></div>
+
+            <div class="about__tag">
+              <i class="bx bx-badge-check"></i>
+              Computer Education • Mentor Mindset
+            </div>
+          </div>
+
+          <div class="info">
+            <h3>About Me</h3>
+
+            <p>
+              I’m a frontend developer in Computer Education. I enjoy crafting clean, modern interfaces —
+              but what drives me most is helping people understand. I like turning complex ideas into
+              simple steps, and building learning-friendly experiences that feel calm, clear, and human.
+            </p>
+
+            <div class="mentorCard" aria-label="Teaching mindset">
+              <div class="mentorCard__icon" aria-hidden="true"><i class="bx bx-book-heart"></i></div>
+              <div class="mentorCard__body">
+                <div class="mentorCard__title">Teaching mindset</div>
+                <div class="mentorCard__text">
+                  I believe good teaching is great UI: clear structure, kind guidance, and small details that reduce confusion.
+                </div>
+              </div>
+            </div>
+
+            <div class="about__chips">
+              <span class="chip chip--soft"><i class="bx bx-chalkboard"></i> Mentor-first</span>
+              <span class="chip chip--soft"><i class="bx bx-bulb"></i> Explain clearly</span>
+              <span class="chip chip--soft"><i class="bx bx-layout"></i> UI with purpose</span>
+            </div>
+
+            <div class="about__stats">
+              <div class="aStat">
+                <div class="aStat__num">12+</div>
+                <div class="aStat__label">Projects</div>
+              </div>
+              <div class="aStat">
+                <div class="aStat__num">6</div>
+                <div class="aStat__label">Stacks</div>
+              </div>
+              <div class="aStat">
+                <div class="aStat__num">Teach</div>
+                <div class="aStat__label">Mindset</div>
+              </div>
+            </div>
+
+            <ul class="about__list">
+              <li><i class="bx bx-check"></i> I enjoy guiding others step-by-step — calmly and clearly.</li>
+              <li><i class="bx bx-check"></i> I design interfaces that help users feel confident, not overwhelmed.</li>
+              <li><i class="bx bx-check"></i> I care about learning flow: structure, examples, and gentle feedback.</li>
+            </ul>
+
+            <div class="about__actions">
+              <button class="click-me js-open-about" type="button">Open Bio</button>
+              <a class="pill ghost" href="activity.html"><i class="bx bx-show-alt"></i> Projects</a>
+            </div>
+
+            <div class="about__social" aria-label="Social links">
+              <a class="sbtn" href="https://github.com/Mewwi15" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+              <a class="sbtn" href="https://www.instagram.com/nongmewwi._/" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+              <a class="sbtn" href="https://www.youtube.com/@MEWWI-15" aria-label="YouTube"><i class="bx bxl-linkedin"></i></a>
+              <a class="sbtn" href="contact.html" aria-label="Contact"><i class="bx bx-send"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="container">
+        <h5 class="seprator">My Skills</h5>
+
+        <div class="skills">
+          <div class="left">
+            <div class="info">
+              <h3>What My Programming Skills Include?</h3>
+              <p>
+                Strong fundamentals (HTML/CSS/JS), modern tooling, and a focus on UI quality.
+                This page stays clean and luxury.
+              </p>
+
+              <div class="skills__actions">
+                <a class="pill" href="skill.html"><i class="bx bx-chip"></i> Full Skills Page</a>
+                <a class="pill ghost" href="contact.html"><i class="bx bx-send"></i> Hire Me</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="right">
+            <div class="item"><i class="bx bxl-html5"></i></div>
+            <div class="item"><i class="bx bxl-css3"></i></div>
+            <div class="item"><i class="bx bxl-javascript"></i></div>
+            <div class="item"><i class="bx bxl-typescript"></i></div>
+            <div class="item"><i class="bx bxl-git"></i></div>
+            <div class="item"><i class="bx bxl-bootstrap"></i></div>
+            <div class="item"><i class="bx bxl-php"></i></div>
+            <div class="item"><i class="bx bxl-c-plus-plus"></i></div>
+            <div class="item"><i class="bx bxl-tailwind-css"></i></div>
+            <div class="item"><i class="bx bxl-mongodb"></i></div>
+            <div class="item"><i class="bx bxl-graphql"></i></div>
+            <div class="item"><i class="bx bxl-java"></i></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="start">
+        <h3>Start a project</h3>
+        <p>Interested in working together? Let’s talk—coffee is on me.</p>
+        <button class="click-me js-open-quick" type="button">Let’s do this</button>
+      </div>
+
+      <div class="cols container">
+        <div class="about-col">
+          <h3>Mewwixp</h3>
+          <p>Computer Education Department.</p>
+        </div>
+
+        <div class="links-col">
+          <h4>Useful Links</h4>
+          <a href="index.html">Home</a>
+          <a href="skill.html">Skills</a>
+          <a href="activity.html">Activity</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="links-col">
+          <h4>Social Media</h4>
+          <a href="https://www.instagram.com/nongmewwi._/">Instagram</a>
+          <a href="https://web.facebook.com/mewwi.2025?locale=th_TH">Facebook</a>
+          <a href="https://www.youtube.com/@MEWWI-15">YouTube</a>
+          <a href="https://github.com/Mewwi15">GitHub</a>
+        </div>
+
+        <div class="news-col">
+          <h4>Newsletter</h4>
+          <p>Enter your email to get updates.</p>
+
+          <form class="js-newsletter">
+            <input type="email" placeholder="Your email address" required />
+            <button type="submit" aria-label="Subscribe"><i class="bx bxl-telegram"></i></button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ABOUT MODAL -->
+    <div class="modal" id="aboutModal" aria-hidden="true">
+      <div class="modal__overlay js-close-about" tabindex="-1"></div>
+      <div class="modal__box" role="dialog" aria-modal="true" aria-label="About details">
+        <button class="modal__close js-close-about" type="button" aria-label="Close">&times;</button>
+        <h2 class="modal__title">About Me</h2>
+
+        <p class="modal__desc">
+          I’m studying Computer Education and I genuinely enjoy helping people learn.
+          I like explaining things with simple steps, examples, and patience — the same way I design UI:
+          clear structure, friendly guidance, and details that make users feel confident.
+          My goal is to blend education and technology to create learning experiences that are modern, calm, and meaningful.
+        </p>
+
+        <div class="modal__actions">
+          <a class="pill" href="activity.html"><i class="bx bx-show-alt"></i> See Works</a>
+          <a class="pill ghost" href="contact.html"><i class="bx bx-send"></i> Contact</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- QUICK MODAL -->
+    <div class="modal" id="quickModal" aria-hidden="true">
+      <div class="modal__overlay js-close-quick" tabindex="-1"></div>
+      <div class="modal__box" role="dialog" aria-modal="true" aria-label="Quick actions">
+        <button class="modal__close js-close-quick" type="button" aria-label="Close">&times;</button>
+
+        <h2 class="modal__title">Quick Actions</h2>
+        <p class="modal__desc">Jump within this page, or go to other pages.</p>
+
+        <div class="modal__actions">
+          <a class="pill" href="#education"><i class="bx bx-book"></i> Education</a>
+          <a class="pill" href="#about"><i class="bx bx-user"></i> About</a>
+          <a class="pill" href="#skills"><i class="bx bx-chip"></i> Skills</a>
+          <a class="pill ghost" href="activity.html"><i class="bx bx-grid-alt"></i> Activity</a>
+          <a class="pill ghost" href="contact.html"><i class="bx bx-send"></i> Contact</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast -->
+    <div class="toast" id="toast" aria-hidden="true">
+      <i class="bx bx-check-circle"></i>
+      <span class="toast__text">Done</span>
+    </div>
+
+    <script src="portfolio.js"></script>
+  </body>
+</html>

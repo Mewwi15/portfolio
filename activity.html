@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="activity.css" />
+  <link rel="icon" href="assets/logoxp.ico" sizes="any" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <title>Activity | Mewwixp</title>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <h2 class="brand">Mewwixp</h2>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="skill.html">Skills</a></li>
+      <li><a class="active" href="activity.html">Activity</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="click-me js-open-quick" type="button">Click Me!!</button>
+  </div>
+
+  <!-- HERO -->
+  <header class="hero section js-reveal">
+    <div class="hero__left">
+      <p class="hero__kicker"><i class="bx bxs-bolt-circle"></i> Showcase</p>
+      <h1 class="hero__title">Activity & Works</h1>
+      <p class="hero__desc">
+        A curated selection of my projects, activities, and visuals.
+        Explore the grid, filter by category, and open each card for full details.
+      </p>
+
+      <div class="hero__cta">
+        <a class="pill" href="#grid"><i class="bx bx-grid-alt"></i> Browse Works</a>
+        <button class="pill ghost js-random" type="button"><i class="bx bx-shuffle"></i> Random</button>
+      </div>
+
+      <div class="hero__stats">
+        <div class="stat">
+          <div class="stat__num js-count" data-to="12">0</div>
+          <div class="stat__label">Works</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num js-count" data-to="6">0</div>
+          <div class="stat__label">Categories</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num js-count" data-to="100">0</div>
+          <div class="stat__label">Energy</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__right">
+      <div class="hero__card js-reveal js-tilt">
+        <div class="hero__badge">Featured</div>
+        <img src="assets/work-1.jpg" alt="Featured work" />
+        <div class="hero__cardOverlay">
+          <h3>Signature Project</h3>
+          <p>This is the work I am most proud of: Java Gui.</p>
+          <button
+            class="pill js-open-work"
+            type="button"
+            data-title="Signature Project"
+            data-desc="This is the work I am most proud of: Java Gui."
+            data-img="assets/work-1.jpg"
+            data-tags="Featured,Web,UI"
+          >
+            View details
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- FILTER BAR -->
+  <section class="toolbar section js-reveal" id="grid">
+    <div class="toolbar__left">
+      <h2 class="toolbar__title">Works Grid</h2>
+      <p class="toolbar__sub">Use filters to narrow down by category.</p>
+    </div>
+
+    <div class="toolbar__right">
+      <div class="filters" role="tablist" aria-label="Work filters">
+        <button class="chip is-active js-filter" type="button" data-filter="all">All</button>
+        <button class="chip js-filter" type="button" data-filter="web">Web</button>
+        <button class="chip js-filter" type="button" data-filter="design">Design</button>
+        <button class="chip js-filter" type="button" data-filter="certificate">Certificate</button>
+        <button class="chip js-filter" type="button" data-filter="activity">Activity</button>
+        <button class="chip js-filter" type="button" data-filter="other">Other</button>
+      </div>
+
+      <div class="toolbar__actions">
+        <button class="icon-btn js-toggle-density" type="button" aria-label="Toggle density">
+          <i class="bx bx-expand-alt"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- GRID (keeps your .container .content structure) -->
+  <main class="container section density-normal js-grid">
+    <article class="content js-card js-reveal js-tilt" data-cat="web" data-tags="Web,UI,Frontend">
+      <div class="media">
+        <img src="assets/work-1.jpg" alt="Work 1" />
+        <div class="media__overlay">
+          <div class="overlay__top">
+            <span class="badge">Web</span>
+            <span class="badge ghost"><i class="bx bx-star"></i> Hot</span>
+          </div>
+          <button
+            class="icon-btn ghost js-open-work"
+            type="button"
+            aria-label="Open work"
+            data-title="Work 1"
+            data-desc="This is the work I am most proud of: Java Gui."
+            data-img="assets/work-1.jpg"
+            data-tags="Web,UI,Frontend"
+          >
+            <i class="bx bx-search-alt"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="detail">
+          <h1>Work 1</h1>
+          <p>This is the work I am most proud of: Java Gui.</p>
+          <div class="tags">
+            <span class="tag">Web</span>
+            <span class="tag">UI</span>
+            <span class="tag">Frontend</span>
+          </div>
+        </div>
+      </div>
+
+      <button
+        class="btn js-open-work"
+        type="button"
+        data-title="Work 1"
+        data-desc="This is the work I am most proud of: Java Gui."
+        data-img="assets/output.png"
+        data-tags="Web,UI,Frontend"
+      >
+        View more
+      </button>
+    </article>
+
+    <!-- Duplicate cards as needed (2..6) -->
+    <article class="content js-card js-reveal js-tilt" data-cat="design" data-tags="Design,Poster,Branding">
+      <div class="media">
+        <img src="assets/work-2.JPG" alt="Work 2" />
+        <div class="media__overlay">
+          <div class="overlay__top">
+            <span class="badge">Design</span>
+            <span class="badge ghost">Case</span>
+          </div>
+          <button
+            class="icon-btn ghost js-open-work"
+            type="button"
+            aria-label="Open work"
+            data-title="Work 2"
+            data-desc="This is my Photoshop design work from my military cadet field training."
+            data-img="assets/work-2.JPG"
+            data-tags="Design,Poster,Branding"
+          >
+            <i class="bx bx-search-alt"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="detail">
+          <h1>Work 2</h1>
+          <p>This is my Photoshop design work from my military cadet field training.</p>
+          <div class="tags">
+            <span class="tag">Design</span>
+            <span class="tag">Poster</span>
+            <span class="tag">Branding</span>
+          </div>
+        </div>
+      </div>
+
+      <button
+        class="btn js-open-work"
+        type="button"
+        data-title="Work 2"
+        data-desc="This is my Photoshop design work from my military cadet field training."
+        data-img="assets/work-2.JPG"
+        data-tags="Design,Poster,Branding"
+      >
+        View more
+      </button>
+    </article>
+
+    <article class="content js-card js-reveal js-tilt" data-cat="certificate" data-tags="Certificate,Learning">
+      <div class="media">
+        <img src="assets/work-3.JPG" alt="Work 3" />
+        <div class="media__overlay">
+          <div class="overlay__top">
+            <span class="badge">Certificate</span>
+            <span class="badge ghost">Verified</span>
+          </div>
+          <button
+            class="icon-btn ghost js-open-work"
+            type="button"
+            aria-label="Open work"
+            data-title="Work 3"
+            data-desc="This is the award ceremony for volunteer military cadets."
+            data-img="assets/work-3.JPG"
+            data-tags="Certificate,Learning"
+          >
+            <i class="bx bx-search-alt"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="detail">
+          <h1>Work 3</h1>
+          <p>This is the award ceremony for volunteer military cadets.</p>
+          <div class="tags">
+            <span class="tag">Certificate</span>
+            <span class="tag">Learning</span>
+          </div>
+        </div>
+      </div>
+
+      <button
+        class="btn js-open-work"
+        type="button"
+        data-title="Work 3"
+        data-desc="This is the award ceremony for volunteer military cadets."
+        data-img="assets/work-3.JPG"
+        data-tags="Certificate,Learning"
+      >
+        View more
+      </button>
+    </article>
+
+    <article class="content js-card js-reveal js-tilt" data-cat="activity" data-tags="Activity,Teamwork">
+      <div class="media">
+        <img src="assets/work-4.JPG" alt="Work 4" />
+        <div class="media__overlay">
+          <div class="overlay__top">
+            <span class="badge">Activity</span>
+            <span class="badge ghost">Sport</span>
+          </div>
+          <button
+            class="icon-btn ghost js-open-work"
+            type="button"
+            aria-label="Open work"
+            data-title="Work 4"
+            data-desc="This is a football competition. I came in first place."
+            data-img="assets/work-4.JPG"
+            data-tags="Activity,Teamwork"
+          >
+            <i class="bx bx-search-alt"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="detail">
+          <h1>Work 4</h1>
+          <p>This is a football competition. I came in first place.</p>
+          <div class="tags">
+            <span class="tag">Sport</span>
+            <span class="tag">Teamwork</span>
+          </div>
+        </div>
+      </div>
+
+      <button
+        class="btn js-open-work"
+        type="button"
+        data-title="Work 4"
+        data-desc="This is a football competition. I came in first place."
+        data-img="assets/work-4.JPG"
+        data-tags="Sport,Teamwork"
+      >
+        View more
+      </button>
+    </article>
+
+    <article class="content js-card js-reveal js-tilt" data-cat="activity" data-tags="Activity,Teamwork">
+      <div class="media">
+        <img src="assets/work-5.JPG" alt="Work 5" />
+        <div class="media__overlay">
+          <div class="overlay__top">
+            <span class="badge">Web</span>
+            <span class="badge ghost">API</span>
+          </div>
+          <button
+            class="icon-btn ghost js-open-work"
+            type="button"
+            aria-label="Open work"
+            data-title="Work 5"
+            data-desc="This is a performance from my outdoor show."
+            data-img="assets/work-5.JPG"
+            data-tags="Sport,Teamwork"
+          >
+            <i class="bx bx-search-alt"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="detail">
+          <h1>Work 5</h1>
+          <p>This is a performance from my outdoor show.</p>
+          <div class="tags">
+            <span class="tag">Activity</span>
+            <span class="tag">Teamwork</span>
+          </div>
+        </div>
+      </div>
+
+      <button
+        class="btn js-open-work"
+        type="button"
+        data-title="Work 5"
+        data-desc="This is a performance from my outdoor show."
+        data-img="assets/work-5.JPG"
+        data-tags="Sport,Teamwork"
+      >
+        View more
+      </button>
+    </article>
+
+    <article class="content js-card js-reveal js-tilt" data-cat="other" data-tags="Other,Experiment">
+      <div class="media">
+        <img src="assets/work-6.JPG" alt="Work 6" />
+        <div class="media__overlay">
+          <div class="overlay__top">
+            <span class="badge">Other</span>
+            <span class="badge ghost">Lab</span>
+          </div>
+          <button
+            class="icon-btn ghost js-open-work"
+            type="button"
+            aria-label="Open work"
+            data-title="Work 6"
+            data-desc="This is my provincial-level competition."
+            data-img="assets/work-6.JPG"
+            data-tags="Other,Experiment"
+          >
+            <i class="bx bx-search-alt"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="detail">
+          <h1>Work 6</h1>
+          <p>This is my provincial-level competition.</p>
+          <div class="tags">
+            <span class="tag">Other</span>
+            <span class="tag">Experiment</span>
+          </div>
+        </div>
+      </div>
+
+      <button
+        class="btn js-open-work"
+        type="button"
+        data-title="Work 6"
+        data-desc="This is my provincial-level competition."
+        data-img="assets/work-6.JPG"
+        data-tags="Other,Experiment"
+      >
+        View more
+      </button>
+    </article>
+  </main>
+
+  <!-- FOOTER -->
+    <footer>
+      <div class="start">
+        <h3>Start a project</h3>
+        <p>Interested in working together? Let’s talk—coffee is on me.</p>
+        <button class="click-me js-open-quick" type="button">Let’s do this</button>
+      </div>
+
+      <div class="cols container">
+        <div class="about-col">
+          <h3>Mewwixp</h3>
+          <p>Computer Education Department.</p>
+        </div>
+
+        <div class="links-col">
+          <h4>Useful Links</h4>
+          <a href="index.html">Home</a>
+          <a href="skill.html">Skills</a>
+          <a href="activity.html">Activity</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="links-col">
+          <h4>Social Media</h4>
+          <a href="https://www.instagram.com/nongmewwi._/">Instagram</a>
+          <a href="https://web.facebook.com/mewwi.2025?locale=th_TH">Facebook</a>
+          <a href="https://www.youtube.com/@MEWWI-15">YouTube</a>
+          <a href="https://github.com/Mewwi15">GitHub</a>
+        </div>
+
+        <div class="news-col">
+          <h4>Newsletter</h4>
+          <p>Enter your email to get updates.</p>
+
+          <form class="js-newsletter">
+            <input type="email" placeholder="Your email address" required />
+            <button type="submit" aria-label="Subscribe"><i class="bx bxl-telegram"></i></button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+  <!-- WORK MODAL -->
+  <div class="modal" id="workModal" aria-hidden="true">
+    <div class="modal__overlay js-close-work" tabindex="-1"></div>
+
+    <div class="modal__box" role="dialog" aria-modal="true" aria-label="Work details">
+      <button class="modal__close js-close-work" type="button" aria-label="Close">&times;</button>
+
+      <div class="modal__grid">
+        <div class="modal__media">
+          <img class="js-modal-img" src="assets/work-1.jpg" alt="Work preview" />
+        </div>
+
+        <div class="modal__content">
+          <h2 class="modal__title js-modal-title">Title</h2>
+          <p class="modal__desc js-modal-desc">Description</p>
+          <div class="modal__tags js-modal-tags"></div>
+
+          <div class="modal__actions">
+            <a class="pill" href="contact.html"><i class="bx bx-send"></i> Contact</a>
+            <button class="pill ghost js-close-work" type="button"><i class="bx bx-x"></i> Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- QUICK MODAL -->
+  <div class="modal" id="quickModal" aria-hidden="true">
+    <div class="modal__overlay js-close-quick" tabindex="-1"></div>
+    <div class="modal__box" role="dialog" aria-modal="true" aria-label="Quick actions">
+      <button class="modal__close js-close-quick" type="button" aria-label="Close">&times;</button>
+      <h2 class="modal__title">Quick Actions</h2>
+      <p class="modal__desc">Jump to the grid, or open a random work.</p>
+      <div class="modal__actions">
+        <a class="pill" href="#grid"><i class="bx bx-grid"></i> Go to Grid</a>
+        <button class="pill ghost js-random" type="button"><i class="bx bx-shuffle"></i> Random Work</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="activity.js"></script>
+</body>
+</html>

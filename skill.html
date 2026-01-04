@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="skill.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/logoxp.ico" sizes="any" />
+    <title>My Skill | Mewwixp</title>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <h2 class="brand">Mewwixp</h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="skill.html">Skills</a></li>
+        <li><a href="activity.html">Activity</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="click-me js-open-modal" type="button">Click Me!!</button>
+    </div>
+
+    <!-- MAIN -->
+    <div class="main section js-reveal">
+      <div class="about">
+        <p class="topic">About</p>
+        <div class="line"></div>
+        <img src="assets/person2.png" alt="Profile" />
+        <p class="tagline">Creative Frontend Developer</p>
+      </div>
+
+      <div class="paragraph">
+        <p class="p">
+          I enjoy thinking and dreaming, questioning issues, and seeking
+          "opinions" on things in a quantity that helps with good learning.
+          Consistency in striving to improve myself is key; I aim to be both
+          observant, descriptive, and understanding of others. My goal is to
+          become a "good teacher," guiding learners in the beginning and
+          encouraging them to take the next step.
+        </p>
+        <p class="p2">
+          In this focus, because it's the area where ideas can become reality, I
+          can examine how finding user-friendly and, importantly, detailed work
+          improves daily. You can leverage technology to create accessible
+          learning resources, tools, and get started for everyone.
+        </p>
+
+        <div class="about-cta">
+          <a class="pill" href="#skills">View Skills</a>
+          <a class="pill ghost" href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDER -->
+    <section
+      class="slider-wrap section js-reveal"
+      aria-label="Highlights Slider"
+    >
+      <div class="slider-head">
+        <div>
+          <h2 class="slider-title">Highlights</h2>
+          <p class="slider-subtitle">
+            This is the work I am most proud of.
+          </p>
+        </div>
+
+        <div class="slider-actions">
+          <button
+            class="icon-btn js-prev"
+            type="button"
+            aria-label="Previous slide"
+          >
+            <i class="bx bx-chevron-left"></i>
+          </button>
+          <button
+            class="icon-btn js-next"
+            type="button"
+            aria-label="Next slide"
+          >
+            <i class="bx bx-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="slider" role="region" aria-roledescription="carousel">
+        <div class="slides js-slides">
+          <article class="slide is-active">
+            <img src="assets/slide-1.jpg" alt="Slide 1" loading="lazy" />
+            <div class="slide-overlay">
+              <h3>Project / Activity #1</h3>
+              <p>Java GUI</p>
+            </div>
+          </article>
+
+          <article class="slide">
+            <img src="assets/slide-2.jpg" alt="Slide 2" loading="lazy" />
+            <div class="slide-overlay">
+              <h3>Project / Activity #2</h3>
+              <p>Science project</p>
+            </div>
+          </article>
+
+          <article class="slide">
+            <img src="assets/slide-3.jpg" alt="Slide 3" loading="lazy" />
+            <div class="slide-overlay">
+              <h3>Project / Activity #3</h3>
+              <p>Central Region Skills Competition</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="dots js-dots" aria-label="Slide indicators"></div>
+      </div>
+    </section>
+
+    <!-- SKILL TITLE -->
+    <div class="skill section js-reveal" id="skills">
+      <h1>Skill</h1>
+      <div class="line"></div>
+      <p class="skill-hint">Hover / move mouse on cards for 3D tilt.</p>
+    </div>
+
+    <div class="guarantee section js-reveal">
+      <div class="item js-tilt" data-level="Advanced">
+        <div class="icon"><i class="bx bxl-html5"></i></div>
+        <div class="info">
+          <h3>HTML</h3>
+          <p>Advanced</p>
+        </div>
+        <i class="bx bx-chevron-right"></i>
+      </div>
+
+      <div class="item js-tilt" data-level="Advanced">
+        <div class="icon"><i class="bx bxl-css3"></i></div>
+        <div class="info">
+          <h3>CSS</h3>
+          <p>Advanced</p>
+        </div>
+        <i class="bx bx-chevron-right"></i>
+      </div>
+
+      <div class="item js-tilt" data-level="Intermediate">
+        <div class="icon"><i class="bx bxl-typescript"></i></div>
+        <div class="info">
+          <h3>TYPESCRIPT</h3>
+          <p>Intermediate</p>
+        </div>
+        <i class="bx bx-chevron-right"></i>
+      </div>
+    </div>
+
+    <div class="guarantee section js-reveal">
+      <div class="item js-tilt" data-level="Intermediate">
+        <div class="icon"><i class="bx bxl-git"></i></div>
+        <div class="info">
+          <h3>GIT</h3>
+          <p>Intermediate</p>
+        </div>
+        <i class="bx bx-chevron-right"></i>
+      </div>
+
+      <div class="item js-tilt" data-level="Intermediate">
+        <div class="icon"><i class="bx bxl-bootstrap"></i></div>
+        <div class="info">
+          <h3>BOOTSTRAP</h3>
+          <p>Intermediate</p>
+        </div>
+        <i class="bx bx-chevron-right"></i>
+      </div>
+
+      <div class="item js-tilt" data-level="Beginner">
+        <div class="icon"><i class="bx bxl-php"></i></div>
+        <div class="info">
+          <h3>PHP</h3>
+          <p>Beginner</p>
+        </div>
+        <i class="bx bx-chevron-right"></i>
+      </div>
+    </div>
+
+    <div class="guarantee section js-reveal">
+      <div class="item js-tilt" data-level="Intermediate">
+        <div class="icon"><i class="bx bxl-c-plus-plus"></i></div>
+        <div class="info">
+          <h3>C++</h3>
+          <p>Intermediate</p>
+        </div>
+        <i class="bx bx-chevron-right"></i>
+      </div>
+
+      <div class="item js-tilt" data-level="Intermediate">
+        <div class="icon"><i class="bx bxl-tailwind-css"></i></div>
+        <div class="info">
+          <h3>TAILWIND</h3>
+          <p>Intermediate</p>
+        </div>
+        <i class="bx bx-chevron-right"></i>
+      </div>
+
+      <div class="item js-tilt" data-level="Intermediate">
+        <div class="icon"><i class="bx bxl-mongodb"></i></div>
+        <div class="info">
+          <h3>MONGODB</h3>
+          <p>Intermediate</p>
+        </div>
+        <i class="bx bx-chevron-right"></i>
+      </div>
+    </div>
+
+    <div class="guarantee section js-reveal">
+      <div class="item js-tilt" data-level="Beginner">
+        <div class="icon"><i class="bx bxl-graphql"></i></div>
+        <div class="info">
+          <h3>GRAPHQL</h3>
+          <p>Beginner</p>
+        </div>
+        <i class="bx bx-chevron-right"></i>
+      </div>
+
+      <div class="item js-tilt" data-level="Intermediate">
+        <div class="icon"><i class="bx bxl-jquery"></i></div>
+        <div class="info">
+          <h3>JQUERY</h3>
+          <p>Intermediate</p>
+        </div>
+        <i class="bx bx-chevron-right"></i>
+      </div>
+
+      <div class="item js-tilt" data-level="Beginner">
+        <div class="icon"><i class="bx bxl-java"></i></div>
+        <div class="info">
+          <h3>JAVA</h3>
+          <p>Beginner</p>
+        </div>
+        <i class="bx bx-chevron-right"></i>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="start">
+        <h3>Start a project</h3>
+        <p>Interested in working together? Let’s talk—coffee is on me.</p>
+        <button class="click-me js-open-modal js-open-quick" type="button">Let’s do this</button>
+      </div>
+
+      <div class="cols container">
+        <div class="about-col">
+          <h3>Mewwixp</h3>
+          <p>Computer Education Department.</p>
+        </div>
+
+        <div class="links-col">
+          <h4>Useful Links</h4>
+          <a href="index.html">Home</a>
+          <a href="skill.html">Skills</a>
+          <a href="activity.html">Activity</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="links-col">
+          <h4>Social Media</h4>
+          <a href="https://www.instagram.com/nongmewwi._/">Instagram</a>
+          <a href="https://web.facebook.com/mewwi.2025?locale=th_TH">Facebook</a>
+          <a href="https://www.youtube.com/@MEWWI-15">YouTube</a>
+          <a href="https://github.com/Mewwi15">GitHub</a>
+        </div>
+
+        <div class="news-col">
+          <h4>Newsletter</h4>
+          <p>Enter your email to get updates.</p>
+
+          <form class="js-newsletter">
+            <input type="email" placeholder="Your email address" required />
+            <button type="submit" aria-label="Subscribe"><i class="bx bxl-telegram"></i></button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <!-- MODAL -->
+    <div class="modal" id="modal" aria-hidden="true">
+      <div class="modal__overlay js-close-modal" tabindex="-1"></div>
+      <div
+        class="modal__box"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Quick Actions"
+      >
+        <button
+          class="modal__close js-close-modal"
+          type="button"
+          aria-label="Close"
+        >
+          &times;
+        </button>
+
+        <h2 class="modal__title">Quick Actions</h2>
+        <p class="modal__text">
+          Where would you like to go next?
+        </p>
+
+        <div class="modal__actions">
+          <a class="pill" href="#skills">Go to Skills</a>
+          <a class="pill ghost" href="contact.html">Contact Me</a>
+          <a class="pill ghost" href="index.html">Back to Home</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="skill.js"></script>
+  </body>
+</html>
